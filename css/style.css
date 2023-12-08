@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-weight: normal;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.top_menu {
+    background-color: #F3F3F3;
+}
+
+.top_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 24px;
+    padding: 0 30px;
+}
+
+.top_menu ul {
+    display: none;
+}
+
+.sns_img {
+    display: flex;
+    gap: 10px;
+}
+
+.sns_box {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.sns_box img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.top_menu_txt {
+    display: flex;
+    font-size: 13px;
+}
+
+.top {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 117px;
+    height: 40px;
+}
+
+.gnb {
+    display: flex;
+    gap: 50px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.gnb ul li {
+    display: none;
+}
+
+.gnb2 {
+    display: none;
+}
+
+
+/* main_slider */
+.main_slider {
+    width: 100%;
+    height: 703px;
+}
+
+.main_slider01 img {
+    width: 100%;
+}
+
+.main_slider02 {
+    display: none;
+}
+
+/* contents */
+.secton01 {
+    display: flex;
+    gap: 100px;
+    padding: 132px 0;
+}
+
+.secton01 img {
+    width: 448px;
+    height: 365px;
+}
+
+.secton01 .secton01_txt01 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #DD4F3E;
+}
+
+.secton01_txt02 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.secton01_txt03 {
+    width: 80px;
+    height: 41px;
+    background-color: #DD4F3E;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
