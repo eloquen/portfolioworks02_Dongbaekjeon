@@ -6,39 +6,39 @@
     <title>동백전</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 </head>
 <body>
     <div class="wrap">
         <div class="header">
-            <div class="top_menu">
-                    <div class="inner">
-                        <div class="top_wrap">
-                            <div class="sns_img">
-                                <div class="sns_box"><img src="./images/insta_m.png" alt="인스타"></div>
-                                <div class="sns_box"><img src="./images/facebook_m.jpg" alt="페이스북"></div>
-                                <div class="sns_box"><img src="./images/blog2_m.jpg" alt="블로그"></div>
-                            </div>
-                            <div class="top_menu_txt">
-                                <p>로그인 </p>
-                                <i class="xi-minus-thin xi-rotate-90"></i>
-                                <p>회원가입</p>
-                            </div>
-                        </div>
+            <div class="top">
+                <div class="inner">
+                    <div class="sns">
+                        <div class="sns_box"><img src="./images/insta_m.png" alt="인스타"></div>
+                        <div class="sns_box"><img src="./images/facebook_m.jpg" alt="페이스북"></div>
+                        <div class="sns_box"><img src="./images/blog2_m.jpg" alt="블로그"></div>
                     </div>
+                    <div class="member">
+                        <p>로그인 </p>
+                        <i class="xi-minus-thin xi-rotate-90"></i>
+                        <p>회원가입</p>
+                    </div>
+                </div>
             </div>
-            <div class="inner">
-                <div class="top">
+        
+            <div class="nav">
+                <div class="inner">                    
                     <div class="logo"><img src="./images/mo_logo01.png" alt="로고"></div>
-                        <ul class="gnb">
-                            <li><a href="#">동백전</a></i>
-                                <ul>
-                                    <li><a href="#">동백전 소개</a></li>
-                                    <li><a href="#">동백전 혜택</a></li>
-                                    <li><a href="#">동백전 사용처</a></li>
-                                    <li><a href="#">동백전 신청방법</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">사용안내</a>
+                    <ul class="gnb">
+                        <li><a href="#">동백전</a></i>
+                            <ul>
+                                <li><a href="#">동백전 소개</a></li>
+                                <li><a href="#">동백전 혜택</a></li>
+                                <li><a href="#">동백전 사용처</a></li>
+                                <li><a href="#">동백전 신청방법</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">사용안내</a>
                             <ul>
                                 <li><a href="#">카드 신청안내</a></li>
                                 <li><a href="#">카드 이용 내역</a></li>
@@ -74,8 +74,8 @@
                                 <li><a href="#">문의하기</a></li>
                             </ul>
                         </li>
-                        <div class="bars">
-                            <i class="xi-bars xi-x"></i>
+                        <li class="bars">
+                            <a href=""><i class="xi-bars xi-x"></i></a>
                             <ul class="gnb2">
                                 <li><a href="#">동백전</a><i class="xi-angle-right-min"></i>
                                     <ul>
@@ -120,12 +120,14 @@
                                         <li><a href="#">자주묻는질문</a></li>
                                         <li><a href="#">문의하기</a></li>
                                     </ul>
+                                <li>
                             </ul>
-                        </div>               
+                        </li>               
                     </ul>
                 </div>
             </div>
         </div>
+        
 
         <div class="main_slider">
             <div class="main_slider01">
@@ -178,72 +180,47 @@
                                 <tr>
                                     <td><i class="xi-minus-thin xi-rotate-90 xi-x"></i></td>
                                     <th scope="col">발행주체</th>
-                                    <td>부산광역시</td>
+                                    <td>&nbsp;&nbsp;부산광역시</td>
                                 </tr>
                                 <tr>
                                     <td><i class="xi-minus-thin xi-rotate-90 xi-x"></i></td>
                                     <th scope="col">유효기간</th>
-                                    <td>발행일로부터 5년</td>
+                                    <td><br>&nbsp;&nbsp;발행일로부터 5년<br><br></td>
                                 </tr>
                                 <tr>
                                     <td><i class="xi-minus-thin xi-rotate-90 xi-x"></i></td>
-                                    <th scope="col">사용처</th>
+                                    <th scope="col">사&nbsp;용&nbsp;처</th>
                                     <td>
-                                        <br>
+                                        &nbsp;&nbsp;
                                         사업장이 부산광시인 신용카드, IC카드 단말기를 사용하는 가맹점
                                         <br>
+                                        &nbsp;&nbsp;
                                         (단, 2020.7.2 지역사랑상품권법 시행에 따라 6월말까지
                                         <br>
+                                        &nbsp;&nbsp;
                                         부산시에 동백전 가맹점 등록 신청을 완료한 가맹점)
+                                        <br>
+                                        <br>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><i class="xi-minus-thin xi-rotate-90 xi-x"></i></td>
                                     <th scope="col">제한업소</th>
-                                    <td>대형백화점, 대형마트, 기업형 슈퍼마켓(SSM) 온라인 가맹점,
+                                    <br>
+                                    <td>&nbsp;&nbsp;&nbsp;대형백화점, 대형마트, 기업형 슈퍼마켓(SSM) 온라인 가맹점,
                                         <br>
+                                        &nbsp;&nbsp;
                                         프랜차이즈 직영점, 주소가 부산이 아닌 사업장 등
                                         <br>
+                                        &nbsp;&nbsp;
                                         * 사용 불가 매장은 부산광역시 정책에 따라 일부 변경될 수 있습니다.
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><i class="xi-minus-thin xi-rotate-90 xi-x"></i></td>
                                     <th scope="col">고객센터</th>
-                                    <td>1577-1432</td>
+                                    <td class="secton01_txt07">&nbsp;&nbsp;1577-1432</td>
                                 </tr>
-
-                                <!-- <i class="xi-minus-thin xi-rotate-90 xi-x"></i>
-                                <tr><td class="secton01_txt03"><strong>발행주체</strong></td><td class="secton05_txt01">부산광역시</td></tr>
-                                <br>
-                                <br>
-                                <i class="xi-minus-thin xi-rotate-90 xi-x"></i>
-                                <tr><td><strong>유효기간</strong></td><td class="secton05_txt01">발행일로부터 5년</td></tr>
-                                <br>
-                                <br>
-                                <i class="xi-minus-thin xi-rotate-90 xi-x"></i>
-                                <tr><td><strong>사용처</strong></td></tr>
-                                <tr><td class="secton05_txt01">사업장이 부산광시인 신용카드, IC카드 단말기를 사용하는 가맹점</td></tr>
-                                <br>
-                                <br>
-                                <tr><td class="secton05_txt01">(단, 2020.7.2 지역사랑상품권법 시행에 따라 6월말까지</td></tr>
-                                <br>
-                                <br>
-                                <tr><td class="secton05_txt01">부산시에 동백전 가맹점 등록 신청을 완료한 가맹점)</td></tr>
-                                <br>
-                                <br>
-                                <i class="xi-minus-thin xi-rotate-90 xi-x"></i>
-                                <tr><td><strong>제한업소</strong></td></tr>
-                                <tr><td class="secton05_txt01">대형백화점, 대형마트, 기업형 슈퍼마켓(SSM) 온라인 가맹점,</td></tr>
-                                <br>
-                                <br>
-                                <tr><td class="secton05_txt01">프랜차이즈 직영점, 주소가 부산이 아닌 사업장 등</td></tr>
-                                <br>
-                                <br>
-                                <tr><td class="secton05_txt01">* 사용 불가 매장은 부산광역시 정책에 따라 일부 변경될 수 있습니다.</td></tr>
-                                <br>
-                                <i class="xi-minus-thin xi-rotate-90 xi-x"></i>
-                                <tr><td><strong>고객센터</strong></td><td class="secton01_txt06">1577-1432</td></tr> -->
                             </tbody>
                         </table>
                     </div>
@@ -251,7 +228,7 @@
             </div>
 
                 <div class="secton02">
-                    <div class="inner">
+                    <div class="inner01">
                         <div class="secton02_txt">
                             <p>                    
                                 2022년 4월 01일
@@ -313,7 +290,7 @@
                 </div>
                 
                 <div class="secton04">
-                    <div class="inner">
+                    <div class="inner01">
                         <div class="secton04_txt">
                             <p class="secton01_txt01">동백전 신청방법</p>
                             <p class="secton04_txt02">
@@ -357,7 +334,6 @@
                                 <br>
                                 &bull; 온라인 쇼핑몰
                             </p>
-                            <br>
                             <p class="secton05_txt02">단, 부산광역시 정책에 따라 일부 변경될 수 있습니다.</p>
                         </div>
                     </div>
@@ -365,7 +341,7 @@
         </div>
 
         <div class="footer">
-            <div class="inner">
+            <div class="inner01">
                 <ul class="footer_txt">
                     <li><a href="#">서비스 이용약관</a></li>
                     <i class="xi-minus-thin xi-rotate-90"></i>
@@ -383,5 +359,17 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(window).scroll(function() {
+            console.log($(this).scrollTop());
+            if($(this).scrollTop() > 33) {
+                $('.nav').addClass('active')
+            } else {
+                $('.nav').removeClass('active')
+
+            }
+        })
+    </script>
 </body>
 </html>
