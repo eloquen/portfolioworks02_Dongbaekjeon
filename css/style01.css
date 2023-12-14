@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-weight: normal;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.top .inner {
+    height: 33px;
+}
+
+.nav .inner {
+    height: 89px;
+} 
+
+.inner01 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.top {
+    background-color: #F3F3F3;
+    height: 33px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.top_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+
+}
+
+.xi-minus-thin {
+    font-weight: bold;
+}
+
+.top ul {
+    display: none;
+}
+
+.sns {
+    display: flex;
+    gap: 10px;
+}
+
+.sns_box {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.sns_box img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.member {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav {
+    height: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.nav::after {
+    content: '';
+    position: absolute;
+    top: 89px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+}
+
+.nav.item::after {
+    height: 300px;
+}
+
+.nav.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 117px;
+    height: 40px;
+}
+
+.gnb {
+    display: flex;
+    gap: 50px;
+    z-index: 1;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+}
+
+.inner {
+    position: relative;
+}
+
+.gnb li:last-child ul {
+    display: flex;
+    position: absolute;
+    top: 62px;
+    left: -1150px;
+    width: 1200px;
+    border: none;
+}
+.gnb li:last-child ul li {
+    display: flex;
+}
+
+.gnb > li > a {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.gnb > li > a:hover {
+    color: #3A79fe;
+}
+
+.gnb ul li {
+    width: 180px;
+    height: 30px;
+}
+
+.gnb ul li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.bars .gnb2 ul {
+    display: flex;
+}
+
+.xi-bars {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* main_slider */
+.main_slider {
+    width: 100%;
+    height: 703px;
+}
+
+.main_slider01 img {
+    width: 100%;
+}
+
+.main_slider02 {
+    display: none;
+}
+
+/* contents */
+.secton01 {
+    display: flex;
+    gap: 100px;
+    padding: 132px 0;
+}
+
+table, td, th {
+    text-align: left;
+}
+
+.secton01 img {
+    width: 448px;
+    height: 365px;
+}
+
+.secton01_txt01 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #DD4F3E;
+}
+
+.secton01_txt02 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.secton01_txt03 {
+    width: 80px;
+    height: 41px;
+    font-weight: bold;
+}
+
+.secton02 {
+    background-image: url(../images/section02_background.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 900px;
+}
+
+.secton02_txt p {
+    padding-top: 70px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.secton02_img {
+    margin: 100px 0 200px 0;
+}
+
+.secton02_img img {
+    text-align: center;
+    width: 252px;
+    height: 253px;
+    margin: 0 10px;
+}
+
+.secton01_txt07 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    background-color: #333;
+    padding: 50px 0;
+}
+
+.footer_txt {
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+
+
+
+
+
+
+
