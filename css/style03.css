@@ -302,10 +302,6 @@ body {
     border-left: 1px solid #d9d9d9;
 }
 
-/* .main_tap li:first-child {
-    background-color: #DD4F3E;
-} */
-
 .main_tap li.active {
     background-color: #DD4F3E;
     color: #fff;
@@ -316,77 +312,69 @@ body {
     font-weight: bold;
 }
 
+.item {
+    display: none;
+}
+
 /* contents */
-.secton01 {
+.page {
+    margin: 100px 0;
+}
+
+.page.inner {
+    width: 1200px;
+    margin: 100px auto;
     display: flex;
-    gap: 100px;
-    padding: 132px 0;
+    gap: 50px;
 }
 
-table, td, th {
-    text-align: left;
+.page.inner .photo img{
+    width: 100%;
+    display: block;
 }
 
-.secton01 img {
-    width: 448px;
-    height: 365px;
+
+.page.inner > div {
+    flex: 1;
 }
 
-.secton01_txt01 {
-    font-size: 45px;
-    font-weight: 700;
-    color: #DD4F3E;
+.page .wrap {
+    width: 1200px;
+    margin: 100px auto;
 }
 
-.secton01_txt02 {
-    font-size: 25px;
-    font-weight: 600;
-    color: #222222;
-    line-height: 1.2;
-    margin-bottom: 30px;
+.page .flower_img {
+    display: flex;
+}
+.page .flower_img img {
+    width: 270px;
 }
 
-.secton01_txt03 {
-    width: 80px;
-    height: 41px;
-    font-weight: bold;
-}
-
-.secton02 {
-    background-image: url(../images/section02_background.png);
+.section:nth-child(1) .page:nth-child(2) {
+    background-image: url('../images/section02_background.png');
+    background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
-    height: 742px;
+    background-size: cover;
+    padding: 60px 0;
 }
 
-.secton02_txt p {
-    padding-top: 70px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 35px;
+.last .page.inner {
+    flex-direction: column;
 }
 
-.secton02_img {
-    margin: 100px 0 200px 0;
-}
 
-.secton02_img img {
-    text-align: center;
-    width: 252px;
-    height: 253px;
-    margin: 0 10px;
-}
 
-.secton01_txt06 {
-    font-size: 20px;
-    font-weight: 600;
-}
 
-.secton01_txt07 {
-    font-size: 30px;
-    font-weight: bold;
-}
+/* .secton02 */
 
+
+/* .secton03 */
+
+
+/* secton04 */
+
+
+/* .footer */
 .footer {
     background-color: #333;
     padding: 50px 0;

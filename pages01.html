@@ -6,7 +6,10 @@
     <title>동백전</title>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="./css/style01.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <div class="wrap">
@@ -26,11 +29,12 @@
                 </div>
             </div>
         
-            <div class="nav">
+            <div class="nav on">
                 <div class="inner">                    
                     <div class="logo"><img src="./images/mo_logo01.png" alt="로고"></div>
                     <ul class="gnb">
-                        <li><a href="#">동백전</a></i>
+                        <li>
+                            <a href="#">동백전</a></i>
                             <ul>
                                 <li><a href="#">동백전 소개</a></li>
                                 <li><a href="#">동백전 혜택</a></li>
@@ -38,7 +42,8 @@
                                 <li><a href="#">동백전 신청방법</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">사용안내</a>
+                        <li>
+                            <a href="#">사용안내</a>
                             <ul>
                                 <li><a href="#">카드 신청안내</a></li>
                                 <li><a href="#">카드 이용 내역</a></li>
@@ -47,7 +52,8 @@
                                 <li><a href="#">동백전 사용TIP</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">가맹점</a>
+                        <li>
+                            <a href="#">가맹점</a>
                             <ul>
                                 <li><a href="#">가맹점 혜택</a></li>
                                 <li><a href="#">가맹점 등록 신청</a></li>
@@ -58,14 +64,16 @@
                                 <li><a href="#">동백플러스 가맹점</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">홍보관</a>
+                        <li>
+                            <a href="#">홍보관</a>
                             <ul>
                                 <li><a href="#">동백전 BI</a></li>
                                 <li><a href="#">언론보도</a></li>
                                 <li><a href="#">홍보영상</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">고객센터</a>
+                        <li>
+                            <a href="#">고객센터</a>
                             <ul>
                                 <li><a href="#">공지사항</a></li>
                                 <li><a href="#">신고센터</a></li>
@@ -75,87 +83,85 @@
                             </ul>
                         </li>
                         <li class="bars">
-                            <a href=""><i class="xi-bars xi-x"></i></a>
-                            <ul class="gnb2">
-                                <li><a href="#">동백전</a><i class="xi-angle-right-min"></i>
-                                    <ul>
-                                        <li><a href="#">동백전 소개</a></li>
-                                        <li><a href="#">동백전 혜택</a></li>
-                                        <li><a href="#">동백전 사용처</a></li>
-                                        <li><a href="#">동백전 신청방법</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">사용안내</a><i class="xi-angle-right-min"></i>
-                                    <ul>
-                                        <li><a href="#">카드 신청안내</a></li>
-                                        <li><a href="#">카드 이용 내역</a></li>
-                                        <li><a href="#">카드 분실 신고</a></li>
-                                        <li><a href="#">동백전 가이드</a></li>
-                                        <li><a href="#">동백전 사용TIP</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">가맹점</a><i class="xi-angle-right-min"></i>
-                                    <ul>
-                                        <li><a href="#">가맹점 혜택</a></li>
-                                        <li><a href="#">가맹점 등록 신청</a></li>
-                                        <li><a href="#">QR가맹점 신청</a></li>
-                                        <li><a href="#">가맹점 제신고</a></li>
-                                        <li><a href="#">가맹점 등록 결과 조회</a></li>
-                                        <li><a href="#">가맹점 조회</a></li>
-                                        <li><a href="#">동백플러스 가맹점</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">홍보관</a><i class="xi-angle-right-min"></i>
-                                    <ul>
-                                        <li><a href="#">동백전 BI</a></li>
-                                        <li><a href="#">언론보도</a></li>
-                                        <li><a href="#">홍보영상</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">고객센터</a><i class="xi-angle-right-min"></i>
-                                    <ul>
-                                        <li><a href="#">공지사항</a></li>
-                                        <li><a href="#">신고센터</a></li>
-                                        <li><a href="#">자주묻는질문</a></li>
-                                        <li><a href="#">자주묻는질문</a></li>
-                                        <li><a href="#">문의하기</a></li>
-                                    </ul>
-                                <li>
-                            </ul>
+                            <a href=""><i class="xi-bars xi-x"></i></a>                          
                         </li>               
                     </ul>
                 </div>
             </div>
+
+            <div class="gnb2_wrap">
+                <ul class="gnb2">
+                    <li>
+                        <a href="#">동백전<i class="xi-angle-right-min"></i></a>
+                        <ul>
+                            <li><a href="#">동백전 소개</a></li>
+                            <li><a href="#">동백전 혜택</a></li>
+                            <li><a href="#">동백전 사용처</a></li>
+                            <li><a href="#">동백전 신청방법</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사용안내<i class="xi-angle-right-min"></i></a>
+                        <ul>
+                            <li><a href="#">카드 신청안내</a></li>
+                            <li><a href="#">카드 이용 내역</a></li>
+                            <li><a href="#">카드 분실 신고</a></li>
+                            <li><a href="#">동백전 가이드</a></li>
+                            <li><a href="#">동백전 사용TIP</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">가맹점<i class="xi-angle-right-min"></i></a>
+                        <ul>
+                            <li><a href="#">가맹점 혜택</a></li>
+                            <li><a href="#">가맹점 등록 신청</a></li>
+                            <li><a href="#">QR가맹점 신청</a></li>
+                            <li><a href="#">가맹점 제신고</a></li>
+                            <li><a href="#">가맹점 등록 결과 조회</a></li>
+                            <li><a href="#">가맹점 조회</a></li>
+                            <li><a href="#">동백플러스 가맹점</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">홍보관<i class="xi-angle-right-min"></i></a>
+                        <ul>
+                            <li><a href="#">동백전 BI</a></li>
+                            <li><a href="#">언론보도</a></li>
+                            <li><a href="#">홍보영상</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터<i class="xi-angle-right-min"></i></a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">신고센터</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">자주묻는질문</a></li>
+                            <li><a href="#">문의하기</a></li>
+                        </ul>
+                    </li>                                
+                </ul>
+            </div>
         </div>
         
-
         <div class="main_slider">
             <div class="main_slider01">
-                <img src="./images/home_main_img_1.png" alt="슬라이드1">
+                <p>동백전 소개</p>
             </div>
-            <div class="main_slider02">
-                <img src="./images/home_main_img_2.png" alt="슬라이드2">
-                <div class="main_slider_txt">
-                    <p>소상공인 전통시장의 경제
-                    <br>
-                    활성화를 위한 <span>동백전 가맹점!</span>
-                    <br>
-                    지금 신청하세요
-                    </p>
-                    <div class="main_slider_btns">
-                        <div><p>가맹점 등록 신청<i class="xi-angle-right-min"></i></p></div>
-                        <div><p>QR가맹점신청<i class="xi-angle-right-min"></i></p></div>
-                    </div>
-                </div>
-            </div>
+            <ul class="main_tap">
+                <li class="active"><a href="#">동백전 소개</a></li>
+                <li><a href="#">동백전 혜택</a></li>
+                <li><a href="#">동백전 사용처</a></li>
+                <li><a href="#">동백전 신청방법</a></li>
+            </ul>
         </div>
 
         <div class="contents">
             <div class="inner">
                 <div class="secton01">
-                        <div class="secton01_img">
-                            <img src="./images/section01_banner.png" alt="">
-                        </div>
+                    <div class="secton01_img">
+                        <img src="./images/section01_banner.png" alt="">
+                    </div>
                     <div class="secton01_txt">
                         <p class="secton01_txt01">동백전이란?</p>
                         <p class="secton01_txt02">일상에서 함께하는 부산 필수템 "동백전"
@@ -227,23 +233,25 @@
                 </div>
             </div>
 
-            <div class="secton02">
-                <div class="inner01">
-                    <div class="secton02_txt">
-                        <p>                    
-                            2022년 4월 01일
-                            <br>
-                            더욱 새로워진 동백전을 만나보세요!
-                        </p>
-                    </div>
-                    <div class="secton02_img">
-                        <img src="./images/secrion02_flower_01.png" alt="">
-                        <img src="./images/section02_flower_02.png" alt="">
-                        <img src="./images/section02_flower_03.png" alt="">
-                        <img src="./images/section02_flower_04.png" alt="">
+                <div class="secton02">
+                    <div class="inner01">
+                        <div class="secton02_txt">
+                            <p>                    
+                                2022년 4월 01일
+                                <br>
+                                더욱 새로워진 동백전을 만나보세요!
+                            </p>
+                        </div>
+                        <div class="secton02_img">
+                            <img src="./images/secrion02_flower_01.png" alt="">
+                            <img src="./images/section02_flower_02.png" alt="">
+                            <img src="./images/section02_flower_03.png" alt="">
+                            <img src="./images/section02_flower_04.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
+
+        </div>
 
         <div class="footer">
             <div class="inner01">
@@ -266,7 +274,48 @@
     </div>
 
     <script>
-       
+        $(window).scroll(function() {
+            console.log($(this).scrollTop());
+            if($(this).scrollTop() > 33) {
+                $('.nav').addClass('active')
+            } else {
+                $('.nav').removeClass('active')
+
+            }
+        })
+
+        //  메뉴 
+        $('.gnb > li').hover(
+            function(){
+                $(this).find('ul').show()
+            },
+            function(){
+                $(this).find('ul').hide()
+            },
+        )
+
+        $('.bars').hover(
+            function(){
+                $('.gnb2_wrap').show()
+                $(this).addClass('active')
+            },
+            function(){
+                $('.gnb2_wrap').hide()
+                $(this).removeClass('active')
+            }
+         )   
+
+
+           // tab
+        $('.item').eq(0).show()
+
+        $('.main_tap li').click(function(){
+            $('.main_tap li').removeClass('active')
+            $(this).addClass('active')
+
+            $('.item').hide()
+            $('.item').eq($(this).index()).show()
+        })
     </script>
 </body>
 </html>
